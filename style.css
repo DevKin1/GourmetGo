@@ -1050,6 +1050,7 @@ a{
 }
 
 
+
 /* span-5 */
 .grid-span-5-of-6{
   grid-column: -5/-3;
@@ -1057,8 +1058,9 @@ a{
   border-radius: 10px 0 10px 0;
   padding: 10px;
 }
-.grid-span-5-of-6 p{
+.span-5-compliment{
   font-size: 80%;
+  padding-top: 10px;
 }
 .span-5-profile img{
   width: 100%;
@@ -1072,7 +1074,8 @@ a{
 }
 .span-5-prodile-details{
   align-items: center;
-  P
+  padding: 10px;
+  
 }
 .span-5-prodile-details p{
   font-size: 70%;
@@ -1088,9 +1091,11 @@ a{
   grid-column: -3/-1;
   background: rgb(255,226,181);
   border-radius: 10px 0 10px 0;
+  padding: 10px;
 }
-.grid-span-6-of-6 p{
+.span-6-compliment{
   font-size: 80%;
+  padding: 10px;
 }
 .span-6-profile img{
   width: 100%;
@@ -1110,4 +1115,85 @@ a{
 }
 .span-6-prodile-details h4{
   font-size: 90%;
+}
+/* -------------------------end of testimonials */
+
+
+/* --------footer--------------- */
+.footer_container{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 30px 20px 0 20px;
+  background: rgba(3, 16, 11, 0.945);
+  color: #fff;
+  margin-top: 40px;
+}
+.footer_container p{
+  font-size: 80%;
+  padding-bottom: 10px;
+}
+.footer_container h4{
+  padding-bottom: 10px;
+}
+
+
+
+/* -------------Breakpoint  768px------------------ */
+@media (max-width: 768px){
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section{
+    padding-top: 10px;
+  }
+
+  .navlink,
+  .nav-btn-container{
+    display: none;
+  }
+  
+  header{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+  
+  .fa-bars{
+    font-size: 180%;
+    color: #fff;
+  }
+  .item-span-1-ultimate-container,
+  .item-span-2-ultimate-container,
+  .item-span-3-ultimate-container,
+  .item-span-4-ultimate-container,
+  .item-span-5-ultimate-container,
+  .item-span-6-ultimate-container{
+    margin-bottom: 20px;
+  }
+  .about_box_conatainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .about_box_conatainer div{
+    margin: 0 auto 20px auto;
+  }
+  .testimonials-grid-conatiner{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_container div{
+    margin-bottom: 30px;
+  }
 }
