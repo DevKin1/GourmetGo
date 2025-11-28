@@ -1182,10 +1182,10 @@ a{
     backdrop-filter: blur(10px);
     border-radius: 10px;
   }
-  
   .fa-bars{
     font-size: 180%;
     color: #fff;
+    display: block;
   }
   .item-span-1-ultimate-container,
   .item-span-2-ultimate-container,
